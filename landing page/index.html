@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/main.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets\images\logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets\images\logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets\images\logo.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Navigation Bar with Propdown Menu</title>
+  </head>
+  <body>
+    <header id="nav-menu" aria-label="navigation bar">
+      <div class="container">
+        <div class="nav-start">
+          <nav class="menu">
+            <ul class="menu-bar">
+              <li>
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown1"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="browse"
+                >
+                  Browse
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="dropdown1" class="dropdown">
+                  <ul role="menu">
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#best-of-the-day">
+                        <img src="./assets/images/botd.svg" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title"
+                            >Best of the day</span
+                          >
+                          <p>Shorts featured today by curators</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#featured-streams">
+                        <img src="./assets/images/fs.svg" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title"
+                            >Featured Streams</span
+                          >
+                          <p>Leading creatives livestreams</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#subscriptions">
+                        <img src="./assets/images/sp.svg" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title">Subscriptions</span>
+                          <p>Gain exclusive access</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#creative-feed">
+                        <img src="./assets/images/cf.svg" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title">Creative Feed</span>
+                          <p>See trending creations</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <ul role="menu">
+                    <li class="dropdown-title">
+                      <span class="dropdown-link-title">Browse by apps</span>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#adobe-xd">
+                        <img src="./assets/images/xd.svg" />
+                        Adobe XD
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#after-effect">
+                        <img src="./assets/images/ae.svg" />
+                        After Effect
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#sketch">
+                        <img src="./assets/images/sketch.svg" />
+                        Sketch
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#indesign">
+                        <img src="./assets/images/indesign.svg" />
+                        Indesign
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#figma">
+                        <img src="./assets/images/figma.svg" />
+                        Figma
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li> 
+              <li><a class="nav-link" href="#jobs">Jobs</a></li>
+              <li><a class="nav-link" href="#faqs">FAQs</a></li>
+              <li><a class="nav-link" href="#about">About</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="nav-end">
+          <div class="right-container">
+            <form class="search" role="search">
+              <input type="search" name="search" placeholder="Search" />
+              <i class="bx bx-search" aria-hidden="true"></i>
+            </form>
+            </a>
+            <button class="btn btn-primary">Search</button>
+          </div>
+
+          <button
+            id="hamburger"
+            aria-label="hamburger"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bx bx-menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header><br>
+    <br>
+    <main>
+      <section id="best-of-the-day">
+        <h1>Best of the Day</h1>
+        <img
+        src="./assets\images\images.jpeg"
+        alt="Creative Tools"
+        style="display: block; margin: 0 auto; width: 500px; height: auto;">
+      <br>
+        <p>
+          <b style="display: block; text-align: center;">
+            Every day, new tools and platforms emerge, designed to cater to the
+            evolving needs of creative professionals. Here are today’s most
+            popular tools
+          </b>
+          
+        </p>
+        <ul>
+          <li><br>
+            <b>Canva:</b> A cloud-based design tool for creating user interfaces and user
+            experiences. It allows multiple designers to collaborate in real-time.
+          </li>
+          <li><br>
+            <b>Procreate:</b> A powerful illustration app designed for iPad, offering a
+            wide range of brushes and tools for artists.
+          </li>
+          <li><br>
+            <b>Affinity Designer:</b> A vector graphic design software known for its precision and performance, perfect for creating logos, icons, and complex illustrations.
+          </li>
+        </ul><br>
+       
+      </section>
+
+      <section id="featured-streams">
+        <h1>Featured Streams</h1>
+        <br>
+        <img
+        src="./assets\images\The-5-Step-Design-Process-1-600x450.png"
+        alt="Live Streams"
+        style="display: block; margin: 0 auto; height: auto;"
+      /><br>
+        <p>
+          Join the most influential live streams from leading creatives around the world. Learn tips, tricks, and techniques as professionals share their creative process in real-time. Whether you're into digital art, video editing, or graphic design, there's a stream for you.
+        </p>
+       
+      </section>
+
+      <section id="subscriptions"><br>
+        <h1>Subscriptions</h1><br>
+        <img
+        src="./assets\images\The_Ultimate_Infographic_Design_Guide_13_Tricks_for_Better_Designs.png"
+        alt="Subscription Benefits"
+        style="display: block; margin: 0 auto; width: 1000px; height: auto;"
+      /><br>
+        <p>
+          Get exclusive access to premium content by subscribing to our creative programs. Subscribers can enjoy tutorials, webinars, and resource packs designed to enhance your creative workflow. Sign up today and unlock the full potential of your creativity.
+        </p><br>
+       
+      </section>
+
+      <section id="creative-feed">
+        <h1>Creative Feed</h1><br>
+        <img
+        src="./assets\images\designthinkinglightbulb.png"
+        alt="Trending Designs"
+        style="display: block; margin: 0 auto; width: 500px; height: auto;"
+      /><br>
+        <p>
+          Check out what's trending right now in the world of creativity and design. From innovative UI/UX designs to groundbreaking digital art, our creative feed showcases the best works from around the globe.
+        </p>
+       
+      </section>
+
+      <section id="jobs">
+        <h1>Jobs</h1><br>
+        <img
+        src="./assets\images\ScopeofgraphicdesigninginPakistan.jpg"
+        alt="Job Opportunities"
+        style="display: block; margin: 0 auto; "
+      /><br>
+        <p>
+          Find job opportunities and creative gigs in your field of expertise. Whether you're a freelancer or looking for full-time work, our job board features listings from top companies and agencies. Start your dream job search today.
+        </p>
+       
+      </section>
+
+      <section id="faqs">
+        
+        
+        <h1>FAQs</h1>
+
+<h2>How can I start using these tools?</h2>
+<li>You can sign up for the free versions of most tools and upgrade to the paid versions as your skills grow.</li>
+
+<h2>Are there any free resources for learning?</h2>
+<li>Yes, we offer a variety of tutorials and webinars for free users.</li>
+
+<h2>What platforms are supported?</h2>
+<li>Most tools are available on Windows, macOS, and Linux, with some supporting mobile devices.</li>
+
+<h2>How do I collaborate with others?</h2>
+<li>Many tools, like Figma, offer real-time collaboration, allowing you to work with team members remotely.</li>
+
+<h2>Can I access the content offline?</h2>
+<li>Some tools provide offline access through their desktop applications, while others require an internet connection.</li>
+
+<h2>What is the best tool for beginners?</h2>
+<li>For beginners, tools like Canva and Adobe Spark are user-friendly and offer a range of templates and easy-to-use features.</li>
+
+<h2>What are CSS frameworks?</h2>
+<li>CSS frameworks, like Bootstrap and Foundation, provide pre-designed styles and layouts that can speed up the web design process. Whether you should use them depends on your project's requirements. They can be helpful for rapid development, but they may also add some overhead. It's essential to evaluate if a CSS framework aligns with your project goals.</li>
+
+<h2>What is a navigation bar (navbar) in web design?</h2>
+<li>A navigation bar, often referred to as a navbar, is a user interface element commonly found on websites. It typically appears at the top of a webpage or in a fixed position, and its primary purpose is to provide users with easy and intuitive access to different sections or pages of a website.</li>
+
+           
+      </section>
+
+      <section id="about">
+        <h1>About Us</h1><br>
+        <img
+        src="./assets\images\images.png"
+        alt="About Us"
+        style="display: block; margin: 0 auto; width: 500px; height: auto;"
+      /><br>
+        <p>
+          We are a platform dedicated to providing designers, developers, and creative professionals with the best tools and resources to fuel their passion. Our mission is to bridge the gap between innovative tools and the creative minds that use them. From live-streamed tutorials to exclusive access to premium content, we aim to foster a community of creatives that support and inspire one another.
+        </p>
+        <p>
+          Our platform serves creatives from all fields, including graphic design, UI/UX design, video editing, and more. With partnerships with leading software companies, we provide access to cutting-edge tools and services.
+        </p>
+       
+      </section>
+    </main>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
